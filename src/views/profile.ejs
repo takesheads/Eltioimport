@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Festive&family=Qahiri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="icon" type="imagen/png" href="./imagen/logobeta.jpeg">
+    <!--favicon debe ser-24x24, 16x16,32x32-->
+</head>
+
+
+<body>
+    <% if (!user) { %>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="/signin">Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/signup">Registrate</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <% } else { %>
+
+            <header class="main-header">
+                <div class="container-flex">
+                    <div class="main-header-container">
+                        <h1 class="main-header-title">El tío import</h1>
+                        <span class="icon-menu  " id="btn-menu"><i class="fas fa-bars"></i></span>
+                        <nav class="main-nav" id="main-nav">
+                            <ul class="menu">
+                                <li class="menu-item"><a href="/profile" class="menu-link">HOME</a></li>
+                                <li class="menu-item"><a href="/Nosotros" class="menu-link">Nosotros</a></li>
+                                <li class="menu-item"><a href="/form" class="menu-link">FEATURES</a></li>
+                                <li class="menu-item"><a href="./polos" class="menu-link">Polos</a></li>
+                                <li class="menu-item">
+
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="main-header-container">
+                        <span class="main-header-txt">Need Help</span>
+                        <p class="main-header-txt"><i class="fas fa-phone"></i> Call 123456</p>
+                    </div>
+                    <div class="two columns u-pull-right">
+                        <ul>
+                            <li class="submenu">
+                                <img src="/img/cart.png">
+                                <div id="carrito">
+                                    <p class="vacio">carrito vacio</p>
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Productos</th>
+                                                <th>Precio</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                        </tbody>
+                                    </table>
+                                    <a href="#" id="vaciar-carrito" class="button u-full-width">vaciar carrito</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </header>
+
+
+            <% } %>
+
+                <div class="container-slider">
+                    <div class="slider" id="slider">
+                        <div class="slider-section">
+                            <img src="./imagen/slider6" alt="" class="slider-img">
+                            <div class="slider-content">
+                                <h2 class="slider-title">Men´s clothes</h2>
+                                <p class="slider-text">Cool summer sale 50%</p>
+                                <a href="" class="tip-btn">SHOP NOW</a>
+                            </div>
+                        </div>
+                        <div class="slider-section">
+                            <img src="./imagen/slider2.jpeg" alt="" class="slider-img">
+                            <div class="slider-content">
+                                <h2 class="slider-title">Women´s clothes</h2>
+                                <p class="slider-text">Cool summer sale 50%</p>
+                                <a href="" class="tip-btn">SHOP Now</a>
+                            </div>
+                        </div>
+                        <div class="slider-section">
+                            <img src="./imagen/slider3.jpeg" alt="" class="slider-img">
+                            <div class="slider-content">
+                                <h2 class="slider-title">Men´s clothes</h2>
+                                <p class="slider-text">Cool summer sale 50%</p>
+                                <a href="" class="tip-btn">SHOP Now</a>
+                            </div>
+                        </div>
+                        <div class="slider-section">
+                            <img src="./imagen/slider4.jpeg" alt="" class="slider-img">
+                            <div class="slider-content">
+                                <h2 class="slider-title">Women´s clothes</h2>
+                                <p class="slider-text">Cool summer sale 50%</p>
+                                <a href="" class="tip-btn">SHOP Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-btn slider-btn-right" id="btn-right">&#62;</button>
+                    <button class="slider-btn slider-btn-left" id="btn-left">&#60;</button>
+
+                </div>
+                <main class="main">
+
+                    <div id="lista-catalogo" class="container">
+                        <h2 class="main-title">New Arrivals for you</h2>
+                        <section class="container-products">
+                            <div class="product">
+                                <img clas="product-img" src="./imagen/zapatillas5.jpg" alt="">
+                                <div class="product-description">
+                                    <h3 class="product-title">Nike 340</h3>
+                                    <p class="precio">$50<span class="u-pull-right">$15</span></p>
+                                </div>
+                                <button class="u-full-width button-primary button input agregar-carrito" data-id="1">Añadir al carrito</button>
+                            </div>
+                            <div class="product">
+                                <img clas="product-img" src="./imagen/zapatillas7.jpeg" alt="">
+                                <div class="product-description">
+                                    <h3 class="product-title">Nike 500</h3>
+                                    <p class="precio">$50<span class="u-pull-right">$15</span></p>
+                                </div>
+                                <button class="u-full-width button-primary button input agregar-carrito" data-id="2">Añadir al carrito</button>
+                            </div>
+                            <div class="product">
+                                <img clas="product-img" src="./imagen/zapatillas3.jpg" alt="">
+                                <div class="product-description">
+                                    <h3 class="product-title">Nike 600pro</h3>
+                                    <p class="precio">$50<span class="u-pull-right">$15</span></p>
+                                </div>
+                                <button class="u-full-width button-primary button input agregar-carrito" data-id="3">Añadir al carrito</button>
+                            </div>
+                            <div class="product">
+                                <img clas="product-img" src="./imagen/zapatillas5.jpg" alt="">
+                                <div class="product-description">
+                                    <h3 class="product-title">Nike 120</h3>
+                                    <p class="precio">$50<span class="u-pull-right">$15</span></p>
+                                </div>
+                                <button class="u-full-width button-primary button input agregar-carrito" data-id="4">Añadir al carrito</button>
+                            </div>
+
+                    </div>
+                    </section>
+
+
+
+                    <section class="container-testimonials">
+                        <h2 class="section-title">Testimonials</h2>
+                        <h3 class="testimonial-title">Anamaria</h3>
+                        <p class="testimonial-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, obcaecati molestiae. Cum tenetur perspiciatis recusandae aliquam nobis vel temporibus, fuga, iste explicabo modi voluptates ipsum suscipit facilis incidunt debitis
+                            sed earum voluptas voluptatum numquam quibusdam perferendis et ea repellendus. Soluta id vero aperiam tempora omnis totam fugit consectetur quidem. Facilis cumque illum eos quisquam tempore ea aliquid, nemo esse et minus reiciendis
+                            error praesentium sunt repellendus debitis nesciunt ab, eveniet nam molestiae quia aspernatur nostrum! Impedit a incidunt minus tempora fuga assumenda enim, dicta magnam facilis blanditiis saepe nisi nulla eligendi, voluptate
+                            illo eaque quae fugit velit pariatur placeat nostrum.
+                        </p>
+                    </section>
+                    <div class="container-editor">
+
+                        <div class="editor-item">
+                            <img src="./imagen/fondo4.jpg" class="editor-img" alt="">
+                            <p class="editor-circle">EXPRESS YOUR STYLE NOW</p>
+                        </div>
+                        <div class="editor-item">
+                            <img src="./imagen/fondo6.jpeg" class="editor-img" alt="">
+                            <p class="editor-circle">EXPRESS YOUR STYLE NOW</p>
+                        </div>
+                    </div>
+                    <div id="lista-catalogo" class="container">
+                        <div class="items">
+                            <div class="row">
+                                <h2 class="main-title">Next generation </h2>
+                                <section class="container-products">
+                                    <div class="product">
+                                        <img clas="product-img" src="./imagen/zapatillas5.jpg" alt="">
+                                        <div class="product-description">
+                                            <h3 class="product-title">Nike 340</h3>
+                                            <p class="precio">$50<span class="u-pull-right">$15</span></p>
+                                        </div>
+                                        <button class="u-full-width button-primary button input agregar-carrito" data-id="5">Añadir al carrito</button>
+                                    </div>
+                                    <div class="product">
+                                        <img clas="product-img" src="./imagen/zapatillas7.jpeg" alt="">
+                                        <div class="product-description">
+                                            <h3 class="product-title">Nike 500</h3>
+                                            <p class="precio">$50<span class="u-pull-right">$15</span></p>
+                                        </div>
+                                        <button class="u-full-width button-primary button input agregar-carrito" data-id="6">Añadir al carrito</button>
+                                    </div>
+                                    <div class="product">
+                                        <img clas="product-img" src="./imagen/zapatillas3.jpg" alt="">
+                                        <div class="product-description">
+                                            <h3 class="product-title">Nike 600pro</h3>
+                                            <p class="precio">$50<span class="u-pull-right">$15</span></p>
+                                        </div>
+                                        <button class="u-full-width button-primary button input agregar-carrito" data-id="7">Añadir al carrito</button>
+                                    </div>
+                                    <div class="product">
+                                        <img clas="product-img" src="./imagen/zapatillas5.jpg" alt="">
+                                        <div class="product-description">
+                                            <h3 class="product-title">Nike 120</h3>
+                                            <p class="precio">$50<span class="u-pull-right">$15</span></p>
+                                        </div>
+                                        <button class="u-full-width button-primary button input agregar-carrito" data-id="8">Añadir al carrito</button>
+                                    </div>
+                            </div>
+                        </div>
+
+                        </section>
+                    </div>
+                    <section class="container-tips">
+                        <div class="tips">
+                            <i class="fas fa-hand-paper"></i>
+                            <h2 class="tip-title">Satisfaction Guaranteed</h2>
+                            <p class="tip-txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe accusantium, asperiores fugiat cupiditate laboriosam dignissimos explicabo, ad possimus quo, voluptatem aliquam nihil! Earum ratione mollitia sit animi dicta,
+                                porro incidunt!</p>
+                            <a href="" class="tip-btn">SHOP NOW</a>
+                        </div>
+                        <div class="tips">
+                            <i class="fas fa-rocket"></i>
+                            <h2 class="tip-title">Fast Shipping</h2>
+                            <p class="tip-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quas accusamus pariatur incidunt delectus autem, voluptatem blanditiis. Sapiente magnam aspernatur delectus fugit omnis sit dolor laborum, odio natus consequatur
+                                aliquid.
+                            </p>
+                            <a href="" class="tip-btn">SHOP NOW</a>
+                        </div>
+                        <div class="tips">
+                            <i class="fas fa-cog"></i>
+                            <h2 class="tip-title">UV Protection</h2>
+                            <p class="tip-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ad neque quisquam laboriosam. Molestias, doloribus minus non explicabo temporibus reiciendis, qui perferendis dicta voluptatem incidunt eveniet harum, nulla porro
+                                dolor.
+                            </p>
+                            <a href="" class="tip-btn">SHOP NOW</a>
+                        </div>
+                    </section>
+                </main>
+                <footer class="main-footer">
+                    <div class="footer-section">
+                        <h2 class="footer-title">ABOUT US</h2>
+                        <p class="footer-txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur nesciunt molestiae, animi facilis distinctio mollitia ab, quisquam tempore doloremque, nam numquam. Voluptas et sint nam illo eius veritatis neque debitis!</p>
+                    </div>
+                    <div class="footer-section">
+                        <h2 class="footer-title">Location</h2>
+                        <p class="footer-txt">0926K 4th block building,King Avenue, New York City</p>
+                        <h2 class="footer-title">Contact</h2>
+                        <p class="footer-txt">Phone: +121 698 8907</p>
+                        <p class="footer-txt">Email: info@example.com
+                        </p>
+                    </div>
+                    <div class="footer-section">
+                        <h2 class="footer-title">Quick Links</h2>
+                        <p class="footer-txt"><a href="" class="footer-link">Home</a></p>
+                        <p class="footer-txt"><a href="" class="footer-link">About</a></p>
+                        <p class="footer-txt"><a href="" class="footer-link">Error</a></p>
+                        <p class="footer-txt"><a href="" class="footer-link">Shop</a></p>
+                        <p class="footer-txt"><a href="" class="footer-link">Contact Us</a></p>
+                    </div>
+                    <div class="footer-section">
+                        <h2 class="footer-title">Sign up for your offers</h2>
+                        <p class="footer-txt">By subscribing to our mailing list you will always get latest news and updates from us</p>
+                        <input type="email" class="footer-input" placeholder="Enter your email">
+
+                    </div>
+                    <p class="copy">@ 2021 Googles. All Rights Reserved | Design by Alucard</p>
+                </footer>
+                <script src="./js/slider.js"></script>
+                <script src="./js/menu.js"></script>
+                <script defer src="./js/carito.js"></script>
+
+
+</body>
+
+</html>

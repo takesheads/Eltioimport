@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- layout('layouts/main') %>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iniciar Sesión</title>
+        <link rel="stylesheet" type="text/css" href="./css/Usuario.css">
+    </head>
+
+    <body>
+        <form action="/signin" method="POST">
+            <h2>Iniciar Sesión</h2>
+            <div class="section">
+                <div class="title">Email</div>
+                <div class="field"><input type="email" id="email" name="email" placeholder="Email"></div>
+            </div>
+            <div class="section">
+                <div class="title">password</div>
+                <div class="field"><input type="password" id="password" name="password" placeholder="Password"></div>
+            </div>
+            <div class="section">
+                <div class="button"><input type="submit" value="Iniciar Sección "></div>
+
+            </div>
+        </form>
+    </body>
+
+</html>

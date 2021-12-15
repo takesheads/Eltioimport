@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Festive&family=Qahiri&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <link rel="icon" type="imagen/png" href="./imagen/logobeta.jpeg" />
+    <!--favicon debe ser-24x24, 16x16,32x32-->
+</head>
+
+<body>
+    <!--Barra de navegación-->
+    <header class="main-header">
+        <div class="container-flex">
+            <div class="main-header-container">
+                <h1 class="main-header-title">El tío import</h1>
+                <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i
+          ></span>
+                <nav class="main-nav" id="main-nav">
+                    <ul class="menu">
+                        <li class="menu-item"><a href="/profile" class="menu-link">HOME</a></li>
+                        <li class="menu-item"><a href="/Nosotros" class="menu-link">Nosotros</a></li>
+                        <li class="menu-item"><a href="/form" class="menu-link">FEATURES</a></li>
+                        <li class="menu-item"><a href="./polos" class="menu-link">Polos</a></li>
+
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="main-header-container">
+                <span class="main-header-txt">Need Help</span>
+                <p class="main-header-txt">
+                    <i class="fas fa-phone"></i> Call 123456
+                </p>
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                        <img src="/img/cart.png">
+                        <div id="carrito">
+                            <p class="vacio">carrito vacio</p>
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Productos</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="button u-full-width">vaciar carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--Apartado principal-->
+    <div class="container-slider">
+        <div class="slider" id="slider">
+            <div class="slider-section">
+                <img src="./imagen/slider6.jpg" alt="" class="slider-img" />
+                <div class="slider-content">
+                    <h2 class="slider-title">Clothes for men and women</h2>
+                    <p class="slider-text">Summer sales at 45%</p>
+                    <a href="" class="tip-btn">BUY NOW</a>
+                </div>
+            </div>
+            <div class="slider-section">
+                <img src="./imagen/slider2.jpeg" alt="" class="slider-img" />
+                <div class="slider-content">
+                    <h2 class="slider-title">Clothes for men and women</h2>
+                    <p class="slider-text">Summer sales at 45%</p>
+                    <a href="" class="tip-btn">BUY NOW</a>
+                </div>
+            </div>
+            <div class="slider-section">
+                <img src="./imagen/pexels-photo-3965545.jpeg" alt="" class="slider-img" />
+                <div class="slider-content">
+                    <h2 class="slider-title">Clothes for men and women</h2>
+                    <p class="slider-text">Summer sales at 45%</p>
+                    <a href="" class="tip-btn">BUY NOW</a>
+                </div>
+            </div>
+            <div class="slider-section">
+                <img src="./imagen/slider4.jpeg" alt="" class="slider-img" />
+                <div class="slider-content">
+                    <h2 class="slider-title">Clothes for men and women</h2>
+                    <p class="slider-text">Summer sales at 45%</p>
+                    <a href="" class="tip-btn">BUY NOW</a>
+                </div>
+            </div>
+        </div>
+        <button class="slider-btn slider-btn-right" id="btn-right">&#62;</button>
+        <button class="slider-btn slider-btn-left" id="btn-left">&#60;</button>
+    </div>
+    <main class="main">
+        <div id="listas-catalogo" class="container">
+            <div class="items">
+                <div class="row">
+                    <h2 class="main-title">POLOS EN LIQUIDACIÓN</h2>
+                    <section class="container-products">
+                        <div class="product">
+                            <img clas="product-img" src="./Img.polos/adidas 1.jpg" alt="" />
+                            <div class="product-description">
+                                <h3 class="product-title">Adidas 280</h3>
+                                <p class="precio">$50<span class="u-pull-right">$15</span></p>
+                            </div>
+                            <button class="">Añadir al carrito</button>
+                        </div>
+                        <div class="product">
+                            <img clas="product-img" src="./Img.polos/adidas 2.jpg" alt="" />
+                            <div class="product-description">
+                                <h3 class="product-title">Nike 600</h3>
+                                <p class="precio">$50<span class="u-pull-right">$15</span></p>
+                            </div>
+                            <button class="">Añadir al carrito</button>
+                        </div>
+                        <div class="product">
+                            <img clas="product-img" src="./Img.polos/adidas3.jpg" alt="" />
+                            <div class="product-description">
+                                <h3 class="product-title">Nike 700pro</h3>
+                                <p class="precio">$50<span class="u-pull-right">$15</span></p>
+                            </div>
+                            <button class="">Añadir al carrito</button>
+                        </div>
+                        <div class="product">
+                            <img clas="product-img" src="./Img.polos/adidas4-mitchell.jpg" alt="" />
+                            <div class="product-description">
+                                <h3 class="product-title">Nike 64</h3>
+                                <p class="precio">$50<span class="u-pull-right">$15</span></p>
+                            </div>
+                            <button class="">Añadir al carrito</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <section class="container-testimonials">
+            <h2 class="section-title">
+                Venta de polos al por mayor y al por menor
+            </h2>
+            <h3 class="testimonial-title">Adidas-Nike</h3>
+            <p class="testimonial-txt">
+                Somos una empresa dedicada a la comercialización de ropa exclusiva a un precio competitivo. La variedad de modelos a comercializar estan destinados tanto para hombres commo para mujeres, se tiene la intencion de expresar un estilo de vida libre, dinamico
+                y exclusivo, para ello tenemos la intencion de comercializar las marcas(Adidas-Nike-Puma). A medida de la puesta en marcha del negocio se podrían ir incluyendo otras marcas u estilos por medio de la retroalimentación de la base de datos
+                de nuestros clientes y el análisis de las tendencias del mercado, estas marcas iníciales fueron escogidos principalmente porque son aquellas marcas que tienen acogida y demanda en el mercado pero que su oferta es mínima y inexistente y
+                además de esto por sus diseños exclusivos que hasta para alguien que las desconozca seria una propuesta interesante para cualquiera en el segmento a abordar.
+            </p>
+        </section>
+        <div class="container-editor">
+            <div class="editor-item">
+                <img src="./imagen/fondo4.jpg" class="editor-img" alt="" />
+                <!--imagen/fondo4.jpg-->
+                <p class="editor-circle">NEW STYLE TRENDS</p>
+            </div>
+            <div class="editor-item">
+                <img src="./imagen/fondo6.jpeg" class="editor-img" alt="" />
+                <!--imagen/fondo6.jpeg-->
+                <p class="editor-circle">ENEW STYLE TRENDS</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="items">
+                <div class="row">
+                    <h2 class="main-title">NUEVAS TENDENCIAS</h2>
+                    <section class="container-products">
+                        <div class="product">
+                            <img clas="product-img" src="./Img.polos/polo7.jpeg" alt="" />
+                            <div class="product-description">
+                                <h3 class="product-title">Nike 340</h3>
+                                <p class="precio">$50<span class="u-pull-right">$15</span></p>
+                            </div>
+                            <button class="">Añadir al carrito</button>
+                        </div>
+                        <div class="product">
+                            <img clas="product-img" src="./Img.polos/puma 4.jpg" alt="" />
+                            <div class="product-description">
+                                <h3 class="product-title">Puma 500</h3>
+                                <p class="precio">$50<span class="u-pull-right">$15</span></p>
+                            </div>
+                            <button class="">Añadir al carrito</button>
+                        </div>
+                        <div class="product">
+                            <img clas="product-img" src="./Img.polos/puma 2.jpg" alt="" />
+                            <div class="product-description">
+                                <h3 class="product-title">Puma 600pro</h3>
+                                <p class="precio">$50<span class="u-pull-right">$15</span></p>
+                            </div>
+                            <button class="">Añadir al carrito</button>
+                        </div>
+                        <div class="product">
+                            <img clas="product-img" src="./Img.polos/polera_5-mitchell-bell-bicubic-bspline.jpg" alt="" />
+                            <div class="product-description">
+                                <h3 class="product-title">Puma 120</h3>
+                                <p class="precio">$50<span class="u-pull-right">$15</span></p>
+                            </div>
+                            <button class="">Añadir al carrito</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <section class="container-tips">
+            <div class="tips">
+                <i class="fas fa-hand-paper"></i>
+                <h2 class="tip-title">Satisfaction al cliente</h2>
+                <p class="tip-txt">
+                    Nuestros clientes gracias a una encuesta de satisfacción nos brindaron sus opiniones, gratamente fueron satisfactorias al saber que nuestros productos de alta calidad brindan un estilo de acuerdo al gusto del cliente, esto nos hace crecer como distribuidores
+                    de ropas al mayor y por menor. Las opiniones de nuestros clientes son muy importantes ya que gracia a eso nos pueden expresar su satisfaccion o puntos de mejora, esto nos hace crecer laboralmente y a su vez nos adecuamos mas a los
+                    gustos y necesidades de nuestros clientes.
+                </p>
+                <a href="" class="tip-btn">GET IT NOW</a>
+            </div>
+            <div class="tips">
+                <i class="fas fa-rocket"></i>
+                <h2 class="tip-title">SAFE SHIPPING</h2>
+                <p class="tip-txt">
+                    Nuestras entregas son inmediatas y seguras, antes de realizar la entrega se pacta el lugar y la hora estimada para asi poder organizarnos tanto la empresa como el cliente. Esta es una de nuestras bases fuertes ya que el mercado laboral(digital) esta centrado
+                    en las distribuciones puntuales de sus productos a distintos lugares.
+                </p>
+                <a href="" class="tip-btn">BUY NOW</a>
+            </div>
+            <div class="tips">
+                <i class="fas fa-cog"></i>
+                <h2 class="tip-title">PURCHASE PROTECCTION</h2>
+                <p class="tip-txt">
+                    Nuestra pagina web cuenta con un sistema de alta seguridad para que el cliente no tenga la preocupación al realizar el pago correspondiente sus datos personales, fondos monetarios y su informacion privada sean usurpadas o expuestas, somos una empresa
+                    que se preocupa por el bien estar de los c lientes al realizar un tipo de pago por via web(online). Nos enorgullesemos de ser un empresa altamente competitiva ya que buscamos llegar a los clientes de tal manera que puedan adquirir
+                    nuesteros productos y recomendarnos a sus familiares o conocidos.
+                </p>
+                <a href="" class="tip-btn">SECURE PAYMENT</a>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-section">
+            <h2 class="footer-title">ABOUT US</h2>
+            <p class="footer-txt">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur nesciunt molestiae, animi facilis distinctio mollitia ab, quisquam tempore doloremque, nam numquam. Voluptas et sint nam illo eius veritatis neque debitis!
+            </p>
+        </div>
+        <div class="footer-section">
+            <h2 class="footer-title">Location</h2>
+            <p class="footer-txt">
+                0926K 4th block building,King Avenue, New York City
+            </p>
+            <h2 class="footer-title">Contact</h2>
+            <p class="footer-txt">Phone: +121 698 8907</p>
+            <p class="footer-txt">Email: info@example.com</p>
+        </div>
+        <div class="footer-section">
+            <h2 class="footer-title">Quick Links</h2>
+            <p class="footer-txt"><a href="" class="footer-link">Home</a></p>
+            <p class="footer-txt"><a href="" class="footer-link">About</a></p>
+            <p class="footer-txt"><a href="" class="footer-link">Error</a></p>
+            <p class="footer-txt"><a href="" class="footer-link">Shop</a></p>
+            <p class="footer-txt"><a href="" class="footer-link">Contact Us</a></p>
+        </div>
+        <div class="footer-section">
+            <h2 class="footer-title">Sign up for your offers</h2>
+            <p class="footer-txt">
+                By subscribing to our mailing list you will always get latest news and updates from us
+            </p>
+            <input type="email" class="footer-input" placeholder="Enter your email" />
+        </div>
+        <p class="copy">
+            @ 2021 Googles. All Rights Reserved | Design by Alucard
+        </p>
+    </footer>
+    <script src="./js/slider.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/carito.js"></script>
+</body>
+
+</html>
